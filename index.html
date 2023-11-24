@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--TODO Question No.01 -->
+
+    <div class="loginbox">
+        
+        <h1 class="sign-in">Sign In</h1>
+
+        <form>
+            
+            <label>Username</label>
+            <input type="text" id="nameInput" placeholder="Enter Username">
+
+            <label>Email</label>
+            <input type="email" id="EmailInput" placeholder="Enter Email">
+
+            <label>Password</label>
+            <input type="password" id="passwordInput" placeholder="Enter Password">
+
+            <input type="submit" value="Sign In" onclick="show()">
+
+        </form>
+
+        <a class="forget" href="#">Forgot Password?</a>
+
+    </div>
+
+    <div class="read-more-container">
+
+        <h1>Hello !</h1>
+
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quis eveniet, numquam eos deleniti, distinctio ducimus aperiam dolor soluta alias nemo inventore, necessitatibus iure? Explicabo quis blanditiis eaque dicta aspernatur.<span class="see-less"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non amet nostrum tenetur facilis odio cum necessitatibus enim nobis atque optio debitis inventore voluptates iste aliquid, accusamus sint assumenda esse eos! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum dignissimos sapiente maiores tempore? Odit odio nesciunt accusamus magnam quo error quae! Tenetur, doloremque laborum nisi nulla exercitationem a similique sequi eaque quod nobis id hic tempore itaque accusamus tempora praesentium aspernatur! Ad officiis dicta ipsam? Nostrum, dicta dolore? Esse excepturi nesciunt mollitia corporis molestiae doloremque animi voluptates? Adipisci, laudantium nam perferendis magni cumque delectus. Maiores voluptas sunt asperiores, temporibus voluptatibus odio, distinctio aspernatur necessitatibus ipsum illo perferendis minus repudiandae non commodi ab doloribus amet dolorem cupiditate eveniet. Facere suscipit nihil odio rerum expedita. Rerum voluptas libero id voluptatem quo tempora? </span></p>
+
+        <button class="see-more">Read More</button>
+     
+    </div>
+
+    <div class="addsection">
+
+    <table class="studentData" id="studentData">
+        <tr class="tableRow">
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th></th>
+        </tr>
+        <tr class="tableRow" id="tableRow1">
+            <td>01</th>
+            <td>Muhammad Ameen</td>
+            <td>8th Semester</td>
+            <td><button class="deleteButton" onclick="deleteRow('tableRow1')">Delete</button></td>
+        </tr>
+        <tr class="tableRow" id="tableRow2">
+            <td>02</td>
+            <td>Muhammad Ali</td>
+            <td>2nd Semester</td>
+            <td><button class="deleteButton" onclick="deleteRow('tableRow2')">Delete</button></td>
+        </tr>
+        <tr class="tableRow" id="tableRow3">
+            <td>03</td>
+            <td>Hammad Alam</td>
+            <td>3rd Semester</td>
+            <td><button class="deleteButton" onclick="deleteRow('tableRow3')">Delete</button></td>
+        </tr>
+        <tr class="tableRow" id="tableRow4">
+            <td>04</td>
+            <td>Abdus Salam</td>
+            <td>1st Semester</td>
+            <td><button class="deleteButton" onclick="deleteRow('tableRow4')">Delete</button></td>
+        </tr>
+        
+
+    </table>
+
+    <button class="addButton" onclick="addingRow()">Add</button>
+
+    </div>
+
+
+    <script src="main.js"></script>
+
+</body>
+</html>

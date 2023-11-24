@@ -1,0 +1,88 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.loginbox {
+    width: 300px;
+    height: 380px;
+    background: #1c2833;
+    color: white;
+    margin: 70px auto;
+    border-radius: 10px;
+}
+
+.logo {
+    width: 100px;
+    height:100px;
+    position: relative;
+    top: -70px;
+    left: calc(50% - 50px);
+}
+
+.sign-in {
+    text-align: center;
+    margin-top: -60px;
+}
+
+label {
+    font-size: 18px;
+    display: block;
+    margin-left: 20px;
+}
+
+input {
+    width: 80%;
+    margin: 0 0 20px 20px;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    height: 40px;
+    outline: none;
+    color: white;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    border-radius: 20px;
+    background: #fb2525;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.forget {
+    text-decoration: none;
+    color: white;
+    margin-left: 30%;
+}
+
+.studentData {
+    border-spacing: 10px 5px;
+}
+
+.addsection {
+    display: flex;
+    flex-direction: column;
+}
+
+.tableRow {
+    text-align: center;
+}
+
+.deleteButton , .addButton {
+    cursor: pointer;
+}
+
+.see-less {
+    display: none;
+}
+
+.show-more .see-less {
+    display: inline;
+}
